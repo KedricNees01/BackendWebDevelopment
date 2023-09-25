@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest # You can choose the desired runner
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Code
