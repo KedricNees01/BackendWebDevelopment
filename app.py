@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask
 import datetime
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ def index():
 def day():
     date = datetime.date.today()
     day = date.day
-    return f"<p>The current day is: { day }</p> <br> <p><a href = '/'>Home</a>"
+    return f"<p>The current day is: { day }</p> <br> <p><a href = '/'>Home test</a>"
 
 @app.route("/month")
 def month():
@@ -27,5 +27,4 @@ def year():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 
