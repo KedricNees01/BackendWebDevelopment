@@ -11,7 +11,7 @@ def index():
 def day():
     date = datetime.date.today()
     day = date.day
-    return f"<p>The current day is: { day }</p> <br> <p><a href = '/'>Home test</a>"
+    return f"<p>The current day is: { day }</p> <br> <p><a href = '/'>Home</a>"
 
 @app.route("/month")
 def month():
